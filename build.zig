@@ -379,9 +379,9 @@ pub fn build(b: *std.Build) !void {
     compiler_root_module.linkLibrary(dxcvalidator);
     compiler_root_module.linkLibrary(spirv_tools);
     if (target.result.os.tag == .windows) {
-        compiler_root_module.linkSystemLibrary("Version", .{});
-        compiler_root_module.linkSystemLibrary("Ole32", .{});
-        compiler_root_module.linkSystemLibrary("OleAut32", .{});
+        compiler_root_module.linkSystemLibrary("version", .{});
+        compiler_root_module.linkSystemLibrary("ole32", .{});
+        compiler_root_module.linkSystemLibrary("oleaut32", .{});
     }
     compiler_root_module.addCMacro("ENABLE_SPIRV_CODEGEN", "1");
     compiler_root_module.addCMacro("DXC_API_IMPORT", "__declspec(dllexport)");
@@ -444,9 +444,9 @@ pub fn build(b: *std.Build) !void {
         .flags = cxx_flags,
     });
     if (target.result.os.tag == .windows) {
-        dxc_exe_root_module.linkSystemLibrary("Version", .{});
-        dxc_exe_root_module.linkSystemLibrary("Ole32", .{});
-        dxc_exe_root_module.linkSystemLibrary("OleAut32", .{});
+        dxc_exe_root_module.linkSystemLibrary("version", .{});
+        dxc_exe_root_module.linkSystemLibrary("ole32", .{});
+        dxc_exe_root_module.linkSystemLibrary("oleaut32", .{});
     }
 
     const dxc = b.addExecutable(.{
@@ -476,9 +476,9 @@ pub fn build(b: *std.Build) !void {
     dxil_root_module.linkLibrary(clang);
     dxil_root_module.linkLibrary(dxcvalidator);
     if (target.result.os.tag == .windows) {
-        dxil_root_module.linkSystemLibrary("Version", .{});
-        dxil_root_module.linkSystemLibrary("Ole32", .{});
-        dxil_root_module.linkSystemLibrary("OleAut32", .{});
+        dxil_root_module.linkSystemLibrary("version", .{});
+        dxil_root_module.linkSystemLibrary("ole32", .{});
+        dxil_root_module.linkSystemLibrary("oleaut32", .{});
     }
     dxil_root_module.addCMacro("DXC_API_IMPORT", "__declspec(dllexport)");
 
