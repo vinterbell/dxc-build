@@ -1,0 +1,6 @@
+.{
+    "DxilRootSignature.cpp",
+    "DxilRootSignatureConvert.cpp",
+    "DxilRootSignatureSerializer.cpp",
+    "DxilRootSignatureValidator.cpp",
+}

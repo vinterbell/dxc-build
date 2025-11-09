@@ -1,0 +1,9 @@
+.{
+    "Reader/BitcodeReader.cpp",
+    "Reader/BitstreamReader.cpp",
+
+    "Writer/BitWriter.cpp",
+    "Writer/BitcodeWriter.cpp",
+    "Writer/BitcodeWriterPass.cpp",
+    "Writer/ValueEnumerator.cpp",
+}

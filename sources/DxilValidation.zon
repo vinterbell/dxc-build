@@ -1,0 +1,5 @@
+.{
+    "DxilContainerValidation.cpp",
+    "DxilValidation.cpp",
+    "DxilValidationUtils.cpp",
+}

@@ -1,0 +1,13 @@
+.{
+    "D3DReflectionDumper.cpp",
+    "D3DReflectionStrings.cpp",
+    "DxilContainer.cpp",
+    "DxilContainerAssembler.cpp",
+    "DxilContainerReader.cpp",
+    "DxcContainerBuilder.cpp",
+    "DxilPipelineStateValidation.cpp",
+    "DxilRDATBuilder.cpp",
+    "DxilRuntimeReflection.cpp",
+    "RDATDumper.cpp",
+    "RDATDxilSubobjects.cpp",
+}

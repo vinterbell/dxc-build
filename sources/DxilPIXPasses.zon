@@ -1,0 +1,18 @@
+.{
+    "DxilAddPixelHitInstrumentation.cpp",
+    "DxilAnnotateWithVirtualRegister.cpp",
+    "DxilDbgValueToDbgDeclare.cpp",
+    "DxilDebugInstrumentation.cpp",
+    "DxilForceEarlyZ.cpp",
+    "DxilOutputColorBecomesConstant.cpp",
+    "DxilPIXMeshShaderOutputInstrumentation.cpp",
+    "DxilRemoveDiscards.cpp",
+    "DxilReduceMSAAToSingleSample.cpp",
+    "DxilShaderAccessTracking.cpp",
+    "DxilPIXPasses.cpp",
+    "DxilPIXVirtualRegisters.cpp",
+    "PixPassHelpers.cpp",
+    "DxilPIXAddTidToAmplificationShaderPayload.cpp",
+    "DxilPIXDXRInvocationsLog.cpp",
+    "DxilNonUniformResourceIndexInstrumentation.cpp",
+}

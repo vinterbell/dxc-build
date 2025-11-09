@@ -1,0 +1,34 @@
+.{
+    .name = .dxc,
+    .version = "1.8.2505",
+    .fingerprint = 0x83c279f29f3625b2,
+    .minimum_zig_version = "0.16.0-dev.1254+bf15c791f",
+    .dependencies = .{
+        .windows = .{
+            .path = "../windows",
+        },
+        .upstream = .{
+            .url = "git+https://github.com/vinterbell/DirectXShaderCompiler#27b1810119bdb703dfa91a2131702c1b16f7f2e4",
+            .hash = "N-V-__8AAMBDcgfpkWUZ7x59TeeurBW__Pt_SgDZQeRC1AIF",
+        },
+        .directx_headers = .{
+            .path = "external/DirectX-Headers",
+        },
+        .spirv_headers = .{
+            .path = "external/SPIRV-Headers",
+        },
+        .spirv_tools = .{
+            .path = "external/SPIRV-Tools",
+        },
+    },
+    .paths = .{
+        "src",
+        "build.zig",
+        "build.zig.zon",
+        "clang_sources",
+        "config",
+        "external",
+        "generated",
+        "sources",
+    },
+}

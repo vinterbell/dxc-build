@@ -1,0 +1,13 @@
+.{
+    .name = .dxc,
+    .version = "1.8.2505",
+    .fingerprint = 0x83c279f29f3625b2,
+    .minimum_zig_version = "0.16.0-dev.1254+bf15c791f",
+    .paths = .{
+        "bin",
+        "lib",
+        "include",
+        "build.zig",
+        "build.zig.zon",
+    },
+}
