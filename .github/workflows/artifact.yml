@@ -9,7 +9,7 @@ permissions:
 jobs:
   prep:
     name: Prepare
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-32vcpu-ubuntu-2404
     outputs:
       version: ${{ steps.version.outputs.version }}
       should-publish: ${{ steps.semver_parser.outputs.prerelease == '' }}
@@ -52,7 +52,7 @@ jobs:
 
     name: ${{ matrix.name }}
     timeout-minutes: 20
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-32vcpu-ubuntu-2404
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -84,7 +84,7 @@ jobs:
 
   release:
     name: Release
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-32vcpu-ubuntu-2404
     needs: [prep, build]
     steps:
       - name: Checkout Repository
