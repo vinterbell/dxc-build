@@ -2,11 +2,11 @@
     .name = .dxc,
     .version = "1.8.2505",
     .fingerprint = 0x83c279f29f3625b2,
-    .minimum_zig_version = "0.16.0-dev.1254+bf15c791f",
+    .minimum_zig_version = "0.15.2",
     .dependencies = .{
         .upstream = .{
-            .url = "git+https://github.com/vinterbell/DirectXShaderCompiler#27b1810119bdb703dfa91a2131702c1b16f7f2e4",
-            .hash = "N-V-__8AAMBDcgfpkWUZ7x59TeeurBW__Pt_SgDZQeRC1AIF",
+            .url = "git+https://github.com/vinterbell/DirectXShaderCompiler?ref=zig#1b22bb932e10d1017808c7b31f55833038771bdc",
+            .hash = "N-V-__8AAL6LcgdktaiFEd22-hPEO7qu4O5WB1fE5ApZ-Kc4",
         },
         .directx_headers = .{
             .path = "external/DirectX-Headers",
