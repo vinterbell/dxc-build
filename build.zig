@@ -37,6 +37,7 @@ pub fn build(b: *std.Build) !void {
         .optimize = optimize,
         .link_libc = true,
         .link_libcpp = true,
+        .strip = true,
     });
 
     const spirv_headers = b.addLibrary(.{
@@ -62,6 +63,7 @@ pub fn build(b: *std.Build) !void {
         .link_libc = true,
         .link_libcpp = true,
         .pic = true,
+        .strip = true,
     });
     const lib = b.addLibrary(.{
         .name = "llvm",
@@ -245,6 +247,7 @@ pub fn build(b: *std.Build) !void {
         .link_libc = true,
         .link_libcpp = true,
         .pic = true,
+        .strip = true,
     });
     clang_root_module.addIncludePath(clang_include_dir);
     clang_root_module.addIncludePath(b.path("generated"));
@@ -278,6 +281,7 @@ pub fn build(b: *std.Build) !void {
         .link_libc = true,
         .link_libcpp = true,
         .pic = true,
+        .strip = true,
     });
     libclang_root_module.addCSourceFiles(.{
         .root = libclang_path,
@@ -326,6 +330,7 @@ pub fn build(b: *std.Build) !void {
         .link_libc = true,
         .link_libcpp = true,
         .pic = true,
+        .strip = true,
     });
     validator_root_module.addCSourceFiles(.{
         .root = validator_path,
@@ -354,6 +359,7 @@ pub fn build(b: *std.Build) !void {
         .link_libc = true,
         .link_libcpp = true,
         .pic = true,
+        .strip = true,
     });
     compiler_root_module.addCSourceFiles(.{
         .root = upstream.path("tools/clang/tools/dxcompiler"),
@@ -403,6 +409,7 @@ pub fn build(b: *std.Build) !void {
         .link_libc = true,
         .link_libcpp = true,
         .pic = true,
+        .strip = true,
     });
     dxclib_executable_root_module.addCSourceFiles(.{
         .root = dxclib_path,
@@ -434,6 +441,7 @@ pub fn build(b: *std.Build) !void {
         .link_libc = true,
         .link_libcpp = true,
         .pic = true,
+        .strip = true,
     });
     dxc_exe_root_module.linkLibrary(dxclib_lib);
     dxc_exe_root_module.addCSourceFiles(.{
@@ -463,6 +471,7 @@ pub fn build(b: *std.Build) !void {
         .link_libc = true,
         .link_libcpp = true,
         .pic = true,
+        .strip = true,
     });
     dxil_root_module.addCSourceFiles(.{
         .root = dxil_path,
@@ -875,6 +884,7 @@ fn buildSpirvTools(b: *std.Build, target: std.Build.ResolvedTarget, optimize: st
         .link_libc = true,
         .link_libcpp = true,
         .pic = true,
+        .strip = true,
     });
     spirv_tools_root_module.addIncludePath(spirv_tools_dep.path("."));
     spirv_tools_root_module.addIncludePath(spirv_tools_dep.path("include"));

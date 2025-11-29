@@ -120,6 +120,7 @@ DIAG(err_gnu_inline_asm_disabled, CLASS_ERROR, (unsigned)diag::Severity::Error, 
 DIAG(err_hlsl_bool_redeclaration, CLASS_ERROR, (unsigned)diag::Severity::Error, "redeclaration of HLSL built-in type 'bool'", 0, SFINAE_SubstitutionFailure, false, true, 4)
 DIAG(err_hlsl_compat_generalized_initializer_lists, CLASS_ERROR, (unsigned)diag::Severity::Error, "generalized initializer lists are incompatible with HLSL", 0, SFINAE_SubstitutionFailure, false, true, 4)
 DIAG(err_hlsl_enum, CLASS_ERROR, (unsigned)diag::Severity::Error, "enum is unsupported in HLSL before 2017", 0, SFINAE_SubstitutionFailure, false, true, 4)
+DIAG(err_hlsl_expected_hlsl_attribute, CLASS_ERROR, (unsigned)diag::Severity::Error, "Unexpected '(' in semantic annotation. Did you mean 'packoffset()' or 'register()'?", 0, SFINAE_SubstitutionFailure, false, true, 4)
 DIAG(err_hlsl_expected_space, CLASS_ERROR, (unsigned)diag::Severity::Error, "expected space definition with syntax 'spaceX', where X is an integral value", 0, SFINAE_SubstitutionFailure, false, true, 4)
 DIAG(err_hlsl_incompatible_option, CLASS_ERROR, (unsigned)diag::Severity::Error, "Cannot use %0 and %1 together", 0, SFINAE_SubstitutionFailure, false, true, 4)
 DIAG(err_hlsl_modifier_after_type, CLASS_ERROR, (unsigned)diag::Severity::Error, "modifiers must appear before type", 0, SFINAE_SubstitutionFailure, false, true, 4)
