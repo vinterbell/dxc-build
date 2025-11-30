@@ -5,8 +5,8 @@
     .minimum_zig_version = "0.15.2",
     .dependencies = .{
         .upstream = .{
-            .url = "git+https://github.com/vinterbell/DirectXShaderCompiler?ref=zig#78908acfa011be261939349a18314474887e16aa",
-            .hash = "N-V-__8AAJOrcgcrvYbdSMCy7u9XYDiXp7SzqrN6fvfek5vs",
+            .url = "git+https://github.com/vinterbell/DirectXShaderCompiler?ref=zig#e13ab7b7186b903459293e053eda5ca923eb1b63",
+            .hash = "N-V-__8AAAercgfx84tE59wkWm_JvIFRjPuZzCveM3hTv6ob",
         },
         .directx_headers = .{
             .path = "external/DirectX-Headers",
